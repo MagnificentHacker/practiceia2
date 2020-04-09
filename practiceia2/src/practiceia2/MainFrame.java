@@ -51,6 +51,7 @@ public class MainFrame extends JFrame {
 	
 	public MainFrame() {
 		setTitle("COVID stockpiler");
+		System.out.println("Testing the app");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 822, 528);
 		contentPane = new JPanel();
