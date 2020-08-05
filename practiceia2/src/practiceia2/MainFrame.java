@@ -51,7 +51,6 @@ public class MainFrame extends JFrame {
 	
 	public MainFrame() {
 		setTitle("COVID stockpiler");
-		System.out.println("Testing the app");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 822, 528);
 		contentPane = new JPanel();
@@ -70,7 +69,6 @@ public class MainFrame extends JFrame {
 		tabbedPane.add("Tab1",tab1);
 		tab1.setLayout(null);
 		tabbedPane.add("Adding",new Tab2(tableData,tabbedPane));
-		tabbedPane.add("About",new Tab3(tabbedPane));
 
 	
 	}

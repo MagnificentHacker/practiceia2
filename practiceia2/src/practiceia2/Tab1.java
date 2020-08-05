@@ -74,25 +74,6 @@ public class Tab1 extends JPanel {
 		});
 
 
-		JButton aboutbutton = new JButton("About");
-		aboutbutton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				tabbedPane.setSelectedIndex(2);
-			}
-		});
-		aboutbutton.setBounds(659, 296, 89, 23);
-		add(aboutbutton);
-
-
-		JButton addnewButton = new JButton("Add new item");
-		addnewButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				tabbedPane.setSelectedIndex(1);
-			}
-		});
-		addnewButton.setBounds(327, 330, 196, 23);
-		add(addnewButton);
-
 		JButton savebutton = new JButton("Save");
 		savebutton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -112,18 +93,5 @@ public class Tab1 extends JPanel {
 		});
 		loadButton.setBounds(642, 383, 112, 23);
 		add(loadButton);
-
-
-
-		JButton removeBut = new JButton("Remove item");
-		removeBut.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				int row = table.getSelectedRow();
-				tableData.deleteSelectedRowFromJtable(row);
-			}
-
-		});
-		removeBut.setBounds(327, 398, 196, 23);
-		add(removeBut);
 	}
 }
